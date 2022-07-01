@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portafolio de Cornelio Manzueta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+
+        function alerta1(){
+            alert("Haz hecho click en el primer parrafo");
+        }
+        function mostrarAlerta1(){
+            document.getElementsByTagName('p')[0].onclick = alerta1;  
+        }
+        function alerta2(){
+            alert("Haz hecho click en el segundo parrafo, tu eres un humano felicidades!");
+        }
+        function mostrarAlerta2(){
+            document.getElementsByTagName('p')[1].onclick = alerta2;  
+        }
+        function alerta3(){
+            alert("Haz hecho click en el tercer parrafo");
+        }
+        function mostrarAlerta3(){
+            document.getElementsByTagName('p')[2].onclick = alerta3;  
+        }
+        function alertaGeneral(){
+            if(true){
+                mostrarAlerta1();
+                mostrarAlerta2();
+                mostrarAlerta3();
+            }
+        }
+        window.onload = alertaGeneral;
+    </script>
+</head>
+<body>
+    <div>
+        <p>El primer parrafo</p>
+        <p>Haz click aqui si eres humano</p>
+        <p>EL tercer parrafo</p>
+    </div>
+</body>
+</html>
